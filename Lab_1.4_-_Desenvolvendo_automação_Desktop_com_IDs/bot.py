@@ -1,4 +1,3 @@
-# Import for the Desktop Bot
 from botcity.core import DesktopBot, Backend
 
 def main():
@@ -67,10 +66,11 @@ def main():
 
     # Salvando arquivo PDF
     save = bot.find_app_window(title="Salvar Saída de Impressão como")
-    save.type_keys(r"C:\Users\aluno\Documents\DARF.pdf")
+    save.type_keys(r"C:\Users\menez\Documents\DARF2.pdf")
     save.type_keys("{ENTER}")
 
     # Fechando janela formulário
+    form_darf.type_keys("%{F4}")
     form_darf.type_keys("%{F4}")
 
 
