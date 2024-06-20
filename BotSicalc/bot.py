@@ -1,20 +1,8 @@
 from botcity.core import DesktopBot
-from botcity.maestro import *
-
-
-BotMaestroSDK.RAISE_NOT_CONNECTED = False
 
 def main():
-    maestro = BotMaestroSDK.from_sys_args()
-   
-    execution = maestro.get_execution()
-
-    print(f"Task ID is: {execution.task_id}")
-    print(f"Task Parameters are: {execution.parameters}")
-
-    bot = DesktopBot()
     
-    # Abre o aplicativo do SiCalc
+    bot = DesktopBot()
     bot.execute(r"C:\Program Files (x86)\Programas RFB\Sicalc Auto Atendimento\SicalcAA.exe")
 
     if not bot.find( "popup-esclarecimento", matching=0.97, waiting_time=10000):
