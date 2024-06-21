@@ -12,7 +12,7 @@ def main():
     bot = WebBot()
 
     # Configurando para rodar no modo headless
-    bot.headless = False
+    bot.headless = True
 
     # Setando navegador padrão para o Firefox
     bot.browser = Browser.FIREFOX
@@ -53,5 +53,9 @@ def main():
     bot.wait(1000)
     bot.stop_browser()
     
+def not_found(label):
+    print(f"Element not found: {label}")
+
+
 if __name__ == '__main__':
     main()
