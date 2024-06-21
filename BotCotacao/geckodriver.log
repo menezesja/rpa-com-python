@@ -861,3 +861,36 @@ Read port: 49963
 console.error: ({})
 1718988193292	Marionette	INFO	Stopped listening on port 49963
 Dynamically enable window occlusion 1
+1718988365043	geckodriver	INFO	Listening on 127.0.0.1:50056
+1718988368187	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofileMow3lK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1718988368575	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1718988368919	Marionette	INFO	Listening on port 50066
+Read port: 50066
+1718988369100	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1718988380527	Marionette	INFO	Stopped listening on port 50066
+Dynamically enable window occlusion 1
+1718988433833	geckodriver	INFO	Listening on 127.0.0.1:50117
+1718988436899	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofileOl7jGK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1718988437324	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1718988437693	Marionette	INFO	Listening on port 50127
+Read port: 50127
+1718988437853	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1718988449050	Marionette	INFO	Stopped listening on port 50127
+Dynamically enable window occlusion 1
+1718988533819	geckodriver	INFO	Listening on 127.0.0.1:50181
+1718988536955	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofile9a9Ntv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1718988537364	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1718988537699	Marionette	INFO	Listening on port 50191
+Read port: 50191
+1718988537860	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1718988549152	Marionette	INFO	Stopped listening on port 50191
+Dynamically enable window occlusion 1
