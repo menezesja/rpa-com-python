@@ -53,20 +53,5 @@ def main():
     bot.wait(1000)
     bot.stop_browser()
     
-def not_found(label):
-    print(f"Element not found: {label}")
-
-
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-
-
-
-
-
