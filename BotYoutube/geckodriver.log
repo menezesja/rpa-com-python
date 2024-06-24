@@ -1,0 +1,69 @@
+1719273064222	geckodriver	INFO	Listening on 127.0.0.1:65286
+1719273067432	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofileVgqtfj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719273068873	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719273069927	Marionette	INFO	Listening on port 65298
+Read port: 65298
+1719273070258	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1719273076436	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1719273098965	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://www.youtube.com/s/desktop/252a8b44/jsbin/desktop_polymer.vflset/desktop_polymer.js, line 16: Script terminated by timeout at:
+ha@https://www.youtube.com/s/desktop/252a8b44/jsbin/desktop_polymer.vflset/desktop_polymer.js:16:26
+vEa/<@https://www.youtube.com/s/desktop/252a8b44/jsbin/desktop_polymer.vflset/desktop_polymer.js:2690:43
+NO.prototype.runHidden@https://www.youtube.com/s/desktop/252a8b44/jsbin/desktop_polymer.vflset/desktop_polymer.js:11589:39
+vq.prototype.transition@https://www.youtube.com/s/desktop/252a8b44/jsbin/desktop_polymer.vflset/desktop_polymer.js:2687:2
+NO/<@https://www.youtube.com/s/desktop/252a8b44/jsbin/desktop_polymer.vflset/desktop_polymer.js:11585:474
+
+1719273102920	Marionette	INFO	Stopped listening on port 65298
+Dynamically enable window occlusion 1
+console.warn: services.settings: main/addons-manager-settings sync interrupted by shutdown
+console.warn: services.settings: main/query-stripping sync interrupted by shutdown
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+console.warn: services.settings: main/translations-wasm sync interrupted by shutdown
+console.warn: services.settings: main/search-config-icons sync interrupted by shutdown
+console.warn: services.settings: main/search-config-overrides sync interrupted by shutdown
+console.warn: services.settings: main/search-default-override-allowlist sync interrupted by shutdown
+console.warn: services.settings: main/search-config-overrides-v2 sync interrupted by shutdown
+console.warn: services.settings: main/search-config sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/ml-onnx-runtime getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1719273106679	geckodriver	INFO	Listening on 127.0.0.1:65381
+1719273109880	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofile4CoT7k"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719273110520	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719273111077	Marionette	INFO	Listening on port 65392
+Read port: 65392
+1719273111326	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1719273116083	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 17576, MediaDecoderStateMachine #1] WARNING: Decoder=232e8f77c00 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 17576, MediaDecoderStateMachine #1] WARNING: Decoder=232e8f77c00 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:167
+1719273140621	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript warning: https://www.youtube.com/s/desktop/252a8b44/jsbin/desktop_polymer.vflset/desktop_polymer.js, line 2685: Script terminated by timeout at:
+vq.prototype.transition@https://www.youtube.com/s/desktop/252a8b44/jsbin/desktop_polymer.vflset/desktop_polymer.js:2685:33
+MO/<@https://www.youtube.com/s/desktop/252a8b44/jsbin/desktop_polymer.vflset/desktop_polymer.js:11576:114
+
+1719273336826	Marionette	INFO	Stopped listening on port 65392
+Dynamically enable window occlusion 1
+1719273347996	geckodriver	INFO	Listening on 127.0.0.1:65523
+1719273351130	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofileFsgykT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719273351929	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719273352574	Marionette	INFO	Listening on port 65534
+Read port: 65534
+1719273352821	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1719273358869	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1719273366163	Marionette	INFO	Stopped listening on port 65534
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
