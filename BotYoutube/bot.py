@@ -12,6 +12,13 @@ def main():
 
     print(f"Task ID is: {execution.task_id}")
     print(f"Task Parameters are: {execution.parameters}")
+    
+    maestro.alert(
+    task_id=execution.task_id,
+    title="BotYoutube - Inicio",
+    message="Estamos iniciando o processo",
+    alert_type=AlertType.INFO
+    )
 
     bot = WebBot()
     bot.headless = False
