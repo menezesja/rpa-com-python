@@ -14,7 +14,7 @@ def main():
     print(f"Task Parameters are: {execution.parameters}")
 
     bot = WebBot()
-    bot.headless = True
+    bot.headless = False
 
     # Setando Firefox
     bot.browser = Browser.FIREFOX

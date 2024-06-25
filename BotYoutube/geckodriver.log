@@ -67,3 +67,20 @@ JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, l
 Dynamically enable window occlusion 1
 JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
 JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+1719277496369	geckodriver	INFO	Listening on 127.0.0.1:54012
+1719277499510	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofileY5gigy"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719277500198	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719277500385	Marionette	INFO	Listening on port 54031
+Read port: 54031
+1719277500648	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+1719277504476	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1719277527663	Marionette	INFO	Stopped listening on port 54031
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
