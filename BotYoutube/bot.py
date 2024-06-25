@@ -38,6 +38,7 @@ def main():
     print(f"Inscritos => {inscritos}")
 
     bot.wait(3000)
+   
     bot.stop_browser()
 
     maestro.finish_task(
