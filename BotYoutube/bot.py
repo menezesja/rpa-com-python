@@ -6,7 +6,7 @@ BotMaestroSDK.RAISE_NOT_CONNECTED = False
 
 def main():
     bot = WebBot()
-    bot.headless = False
+    bot.headless = True
 
     # Setando Firefox
     bot.browser = Browser.FIREFOX

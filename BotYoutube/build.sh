@@ -1,3 +1,3 @@
 #!/bin/bash
 
-zip -r "BotYoutube.zip" * -x "BotYoutube.zip"
+zip -r "BotYoutube.zip" * -x "BotYoutube.zip"python
