@@ -5,6 +5,14 @@ BotMaestroSDK.RAISE_NOT_CONNECTED = False
 
 
 def main():
+
+    maestro = BotMaestroSDK.from_sys_args()
+    ## Fetch the BotExecution with details from the task, including parameters
+    execution = maestro.get_execution()
+
+    print(f"Task ID is: {execution.task_id}")
+    print(f"Task Parameters are: {execution.parameters}")
+
     bot = WebBot()
     bot.headless = True
 
@@ -32,6 +40,11 @@ def main():
     bot.wait(3000)
     bot.stop_browser()
 
+    maestro.finish_task(
+    task_id=execution.task_id,
+    status=AutomationTaskFinishStatus.SUCCESS,
+    message="Tarefa BotYoutube finalizada com sucesso"
+    )
 
 def not_found(label):
     print(f"Element not found: {label}")
