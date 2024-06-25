@@ -21,8 +21,10 @@ def main():
 
     bot.driver_path = r"resources\geckodriver.exe"
     
-    # Abre o canal da Python Brasil no YouTube
-    bot.browse("https://www.youtube.com/@pythonbrasiloficial")
+    canal = execution.parameters.get("canal", "pythonbrasiloficial")
+
+    # Abrindo o navegador com o canal informado
+    bot.browse(f"https://www.youtube.com/@{canal}")
     
     #maximizar janela
     bot.driver.maximize_window()

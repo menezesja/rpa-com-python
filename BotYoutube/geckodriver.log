@@ -113,11 +113,13 @@ Read port: 54726
 [Child 13228, MediaDecoderStateMachine #1] WARNING: Decoder=1d69dd12800 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
 [Child 13228, MediaDecoderStateMachine #1] WARNING: Decoder=1d69dd12800 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:167
 1719277800299	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
-1719277813471	geckodriver	INFO	Listening on 127.0.0.1:54846
-1719277816562	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofile4xbFT9"
-console.warn: services.settings: Ignoring preference override of remote settings server
-console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1719277817066	Marionette	INFO	Marionette enabled
+JavaScript warning: https://www.youtube.com/s/desktop/252a8b44/jsbin/desktop_polymer.vflset/desktop_polymer.js, line 2685: Script terminated by timeout at:
+vq.prototype.transition@https://www.youtube.com/s/desktop/252a8b44/jsbin/desktop_polymer.vflset/desktop_polymer.js:2685:33
+MO/<@https://www.youtube.com/s/desktop/252a8b44/jsbin/desktop_polymer.vflset/desktop_polymer.js:11576:114
+
+1719278092070	Marionette	INFO	Stopped listening on port 54726
+Dynamically enable window occlusion 1
+nette enabled
 Dynamically enable window occlusion 0
 1719277817202	Marionette	INFO	Listening on port 54870
 Read port: 54870
