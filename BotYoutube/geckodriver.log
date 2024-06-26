@@ -139,3 +139,148 @@ JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, l
 Dynamically enable window occlusion 1
 JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
 JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+1719359503769	geckodriver	INFO	Listening on 127.0.0.1:55383
+1719359506844	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofileJ4Rs3K"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719359507286	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719359507651	Marionette	INFO	Listening on port 55398
+Read port: 55398
+1719359507813	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1719359511529	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1719359516713	Marionette	INFO	Stopped listening on port 55398
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+1719359609460	geckodriver	INFO	Listening on 127.0.0.1:55513
+1719359612565	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofile9LHeqs"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719359613059	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719359613399	Marionette	INFO	Listening on port 55525
+Read port: 55525
+1719359613559	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1719359617063	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1719359622549	Marionette	INFO	Stopped listening on port 55525
+JavaScript warning: https://www.youtube.com/s/desktop/49be3691/jsbin/desktop_polymer.vflset/desktop_polymer.js, line 1779: Script terminated by timeout at:
+hta/this.done</<@https://www.youtube.com/s/desktop/49be3691/jsbin/desktop_polymer.vflset/desktop_polymer.js:1779:177
+
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+1719359681617	geckodriver	INFO	Listening on 127.0.0.1:55637
+1719359684712	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofile6Oz0C3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719359685120	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719359685458	Marionette	INFO	Listening on port 55649
+Read port: 55649
+1719359685618	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1719359689305	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+[Child 5488, MediaDecoderStateMachine #1] WARNING: Decoder=23b17141000 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 5488, MediaDecoderStateMachine #1] WARNING: Decoder=23b17141000 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:167
+1719359701515	Marionette	INFO	Stopped listening on port 55649
+JavaScript warning: https://www.youtube.com/s/desktop/49be3691/jsbin/desktop_polymer.vflset/desktop_polymer.js, line 1779: Script terminated by timeout at:
+hta/this.done</<@https://www.youtube.com/s/desktop/49be3691/jsbin/desktop_polymer.vflset/desktop_polymer.js:1779:177
+
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+1719359759915	geckodriver	INFO	Listening on 127.0.0.1:55739
+1719359763058	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofileDC1dlX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719359763444	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719359763780	Marionette	INFO	Listening on port 55751
+Read port: 55751
+1719359763941	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1719359767519	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1719359772270	Marionette	INFO	Stopped listening on port 55751
+JavaScript warning: https://www.youtube.com/s/desktop/49be3691/jsbin/desktop_polymer.vflset/desktop_polymer.js, line 1447: Script terminated by timeout at:
+Al/<@https://www.youtube.com/s/desktop/49be3691/jsbin/desktop_polymer.vflset/desktop_polymer.js:1447:47
+
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+1719359811575	geckodriver	INFO	Listening on 127.0.0.1:55836
+1719359814710	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofilejoOaDs"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719359815170	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719359815506	Marionette	INFO	Listening on port 55848
+Read port: 55848
+1719359815647	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1719359819366	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1719359824252	Marionette	INFO	Stopped listening on port 55848
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+1719360058529	geckodriver	INFO	Listening on 127.0.0.1:56026
+1719360061665	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofileCtFGxc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719360062134	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719360062537	Marionette	INFO	Listening on port 56039
+Read port: 56039
+1719360062716	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1719360066441	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1719360071506	Marionette	INFO	Stopped listening on port 56039
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+1719360444062	geckodriver	INFO	Listening on 127.0.0.1:56415
+1719360447192	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofilenBbDEa"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719360447561	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719360447648	Marionette	INFO	Listening on port 56427
+Read port: 56427
+1719360447801	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+1719360450874	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1719360454842	Marionette	INFO	Stopped listening on port 56427
+JavaScript warning: https://www.youtube.com/s/desktop/49be3691/jsbin/desktop_polymer.vflset/desktop_polymer.js, line 44: Script terminated by timeout at:
+uaa/this.next@https://www.youtube.com/s/desktop/49be3691/jsbin/desktop_polymer.vflset/desktop_polymer.js:44:439
+b@https://www.youtube.com/s/desktop/49be3691/jsbin/desktop_polymer.vflset/desktop_polymer.js:49:107
+
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js, line 856: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js, line 856: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+1719360777162	geckodriver	INFO	Listening on 127.0.0.1:56729
+1719360780289	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofilePt6r6H"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719360780612	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719360780702	Marionette	INFO	Listening on port 56742
+Read port: 56742
+1719360780862	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+1719360783851	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1719360787847	Marionette	INFO	Stopped listening on port 56742
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js, line 856: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/s/player/61b3b5e4/player_ias.vflset/en_US/base.js, line 856: TypeError: can't access dead object
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object
+Dynamically enable window occlusion 1
+JavaScript error: https://www.youtube.com/@pythonbrasiloficial?themeRefresh=1, line 12: TypeError: can't access dead object

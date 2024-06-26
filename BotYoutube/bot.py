@@ -1,5 +1,6 @@
 from botcity.web import WebBot, Browser, By
 from botcity.maestro import *
+from datetime import datetime
 
 BotMaestroSDK.RAISE_NOT_CONNECTED = False
 
@@ -10,7 +11,7 @@ def main():
         execution = maestro.get_execution()
 
         bot = WebBot()
-        bot.headless = False
+        bot.headless = True
 
         # Setando Firefox
         bot.browser = Browser.FIREFOX
@@ -18,35 +19,27 @@ def main():
         bot.driver_path = r"resources\geckodriver.exe"
 
         maestro.alert(
-        task_id=execution.task_id,
-        title="BotYoutube - Inicio",
-        message="Estamos iniciando o processo",
-        alert_type=AlertType.INFO
+            task_id=execution.task_id,
+            title="BotYoutube - Inicio",
+            message="Estamos iniciando o processo",
+            alert_type=AlertType.INFO
         )
         
         canal = execution.parameters.get("canal", "pythonbrasiloficial")
-
-        # Abrindo o navegador com o canal informado
         bot.browse(f"https://www.youtube.com/@{canal}")
-        
-        #maximizar janela
         bot.driver.maximize_window()
         
         # Faz a busca por ID
         elemento_inscritos = bot.find_element("subscriber-count", By.ID)
 
-        # Se não encontrar, faz a busca por XPATH
-        if not elemento_inscritos:
-            elemento_inscritos = bot.find_element('//span[contains(text(), "inscritos")]', By.XPATH)
-
+        # Coletando o conteúdo de texto do elemento
         inscritos = elemento_inscritos.text
+
+        # Printando os dados coletados
         print(f"Inscritos => {inscritos}")
 
         status = AutomationTaskFinishStatus.SUCCESS
         message = "Tarefa BotYoutube finalizada com sucesso"
-
-        # Forcando uma exception para registrarmos um erro
-        x = 0/0
 
     except Exception as ex:
         # Salvando captura de tela do erro
@@ -69,12 +62,21 @@ def main():
     finally:
         bot.wait(2000)
         bot.stop_browser()
-
-    maestro.finish_task(
-        task_id=execution.task_id,
-        status=AutomationTaskFinishStatus.SUCCESS,
-        message="Tarefa BotYoutube finalizada com sucesso"
-    )
+        
+        maestro.new_log_entry(
+            activity_label="EstatisticasYoutub",
+            values = {
+                "data_hora": datetime.now().strftime("%Y-%m-%d_%H-%M"),
+                "canal": canal,
+                "inscritos": inscritos
+            }
+        )
+        
+        maestro.finish_task(
+            task_id=execution.task_id,
+            status=status,
+            message=message
+        )
 
 def not_found(label):
     print(f"Element not found: {label}")
