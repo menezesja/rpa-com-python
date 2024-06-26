@@ -41,10 +41,20 @@ def main():
         status = AutomationTaskFinishStatus.SUCCESS
         message = "Tarefa BotYoutube finalizada com sucesso"
 
+        # Salvando uma captura de tela
+        bot.save_screenshot("captura.png")
+
+        # Enviando para a plataforma com o nome "Captura Canal..."
+        maestro.post_artifact(
+            task_id=execution.task_id,
+            artifact_name=f"Captura Canal {canal}.png",
+            filepath="captura.png"
+        )
+
     except Exception as ex:
         # Salvando captura de tela do erro
         bot.save_screenshot("erro.png")
-
+        
         # Dicionario de tags adicionais
         tags = {"canal": canal}
 
@@ -71,7 +81,7 @@ def main():
                 "inscritos": inscritos
             }
         )
-        
+
         maestro.finish_task(
             task_id=execution.task_id,
             status=status,
