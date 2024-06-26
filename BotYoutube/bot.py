@@ -24,7 +24,7 @@ def main():
             message="Estamos iniciando o processo",
             alert_type=AlertType.INFO
         )
-        
+    
         canal = execution.parameters.get("canal", "pythonbrasiloficial")
         bot.browse(f"https://www.youtube.com/@{canal}")
         bot.driver.maximize_window()
