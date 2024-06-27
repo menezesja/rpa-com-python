@@ -24,8 +24,8 @@ def main():
         # Acessa página Practice Test Automation
         bot.get("https://practicetestautomation.com/practice-test-login/")
 
-        username = "student"
-        password = "Password123"
+        username = maestro.get_credential(label="login_automatico", key="username")
+        password = maestro.get_credential(label="login_automatico", key="password")
 
         # Busca pelo elemento input de nome de usuário
         input_username = bot.find_element(By.ID, "username")
