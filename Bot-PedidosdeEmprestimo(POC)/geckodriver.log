@@ -271,11 +271,12 @@ Read port: 53398
 1719455251137	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
 1719455280857	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
-1719456332760	geckodriver	INFO	Listening on 127.0.0.1:53546
-1719456335933	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofileKoVtor"
-console.warn: services.settings: Ignoring preference override of remote settings server
-console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1719456336339	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 569: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+1719457098216	Marionette	INFO	Stopped listening on port 53398
+Dynamically enable window occlusion 1
+te enabled
 Dynamically enable window occlusion 0
 1719456336692	Marionette	INFO	Listening on port 53557
 Read port: 53557
@@ -302,8 +303,9 @@ Read port: 53630
 1719456446896	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
 1719456476422	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
-1719456521669	geckodriver	INFO	Listening on 127.0.0.1:53697
-1719456524750	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofilei08fjw"
+1719457091743	Marionette	INFO	Stopped listening on port 53630
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofilei08fjw"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
 1719456525107	Marionette	INFO	Marionette enabled
@@ -313,3 +315,19 @@ Read port: 53708
 1719456525409	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
 1719456555139	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1719457088586	FirefoxAccounts	ERROR	FxA rejecting with error NO_ACCOUNT, details: undefined
+1719457101012	Marionette	INFO	Stopped listening on port 53708
+Dynamically enable window occlusion 1
+1719927380173	geckodriver	INFO	Listening on 127.0.0.1:64193
+1719927383312	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofilesqnvFi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1719927383944	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1719927384488	Marionette	INFO	Listening on port 64207
+Read port: 64207
+1719927384791	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
+1719927413977	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.

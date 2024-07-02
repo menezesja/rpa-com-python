@@ -24,10 +24,6 @@ def main():
     # Exibir os dados
     #print(df)
 
-    # Extrair dados específicos (exemplo)
-    #for index, row in df.iterrows():
-        #print(f"Linha {index}: {row.to_dict()}")
-
     bot = WebBot()
     bot.headless = False
     bot.browser = Browser.FIREFOX
@@ -37,7 +33,7 @@ def main():
     bot.driver.maximize_window()
     sleep(3)
 
-    for _ in range(2):  # Rola a página 
+    for _ in range(2):  # Rola a página para baixo
         bot.page_down()
         sleep(1)
    
@@ -52,17 +48,21 @@ def main():
     button_applyForLoan = bot.find_element("applyButton", By.ID)
     button_applyForLoan.click()
     
-    for _ in range(1):  # Rola a página 
+    for _ in range(1):  # Rola a página para cima
         bot.page_up()
         sleep(1)
     
+    for index, row in df.iterrows():
+        #print(f"Linha {index}: {row.to_dict()}")
+        if not bot.find( "email", matching=0.97, waiting_time=10000):
+            not_found("email")
+        bot.click_relative(32, 58)
+    
+
    
 def not_found(label):
     print(f"Element not found: {label}")
 
 if __name__ == '__main__':
     main()
-
-
-
 
