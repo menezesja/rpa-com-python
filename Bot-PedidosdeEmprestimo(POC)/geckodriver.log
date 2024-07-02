@@ -895,3 +895,4 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 1719938133546	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
