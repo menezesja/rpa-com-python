@@ -896,3 +896,5 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
+1719938346598	Marionette	INFO	Stopped listening on port 54350
+Dynamically enable window occlusion 1
