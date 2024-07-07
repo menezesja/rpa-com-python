@@ -15,6 +15,7 @@ def main():
     print(f"Task ID is: {execution.task_id}")
     print(f"Task Parameters are: {execution.parameters}")
 
+    #arquivo excel
     file_path = r'resources\PedidosEmprestimo.xlsx'
 
     # Ler o arquivo Excel
@@ -33,19 +34,21 @@ def main():
         bot.page_down()
         sleep(1)
    
-    #realiza clique no button "Apply For Laan"
+    #realiza clique no button "Apply For Loan"
     xpath = "/html/body/app-root/body/div/app-welcome-page/div[2]/div/div[3]/div/button"
     element = bot.driver.find_element(By.XPATH, xpath)
     element.click()
     sleep(2)
     
-    #realiza clique no button "Apply For Laan"
+    #realiza clique no button "Apply For Loan"
     button_applyForLoan = bot.find_element("applyButton", By.ID)
     button_applyForLoan.click()
     
+    #extraia dados da plnailha para preencher nos campos do site
     for index, row in df.iterrows():
         bot.page_up()
 
+        # variaveis para acessar os valores da planilha
         email = row['Email do Solicitante']
         emprestimo = row['Montante do Empréstimo']
         termoEmprestimo = row['Termo do Empréstimo']
@@ -83,10 +86,11 @@ def main():
         bot.paste(str(idade))
         sleep(1)
     	
-        # Rola a página para baixo
+        # pula para o botão de submissão
         bot.tab()
         sleep(1)
         
+        #clica no botão de submissão
         btnSubmit = bot.find_element("submitButton", By.ID)
         btnSubmit.click()
         sleep(2)
@@ -94,9 +98,10 @@ def main():
         # Procura a mensagem de aprovação usando XPath 
         mensagem_aprovacao = bot.find_element("//h1[contains(text(), 'approved for a loan with UiBank!')]", By.XPATH)
         if mensagem_aprovacao:
-            apr = float(bot.find_element("rateValue", By.ID).get_attribute('innerHTML'))  # Ou use .text se preferir o texto visível
+            apr = float(bot.find_element("rateValue", By.ID).get_attribute('innerHTML'))  
             idEmprestimo = bot.find_element("loanID", By.ID).get_attribute('innerHTML')
             
+            #extraindo informações do site  como porcentagem de aprovado e o id do emprestimo, preenchendo na planilha
             df.at[index, 'Status do Empréstimo'] = 'Aprovado'
             df.at[index, 'ID do Empréstimo'] = str(idEmprestimo)
             df.at[index, 'APR'] = apr
@@ -111,6 +116,9 @@ def main():
         btnSubmitApply = bot.find_element("applyForNewLoanButton", By.ID)
         btnSubmitApply.click()
         sleep(2)
+    
+    bot.wait(1000)
+    bot.stop_browser()
     
 def not_found(label):
     print(f"Element not found: {label}")

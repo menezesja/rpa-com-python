@@ -881,7 +881,8 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
-1719938099949	geckodriver	INFO	Listening on 127.0.0.1:54336
+Exiting due to channel error.
+Listening on 127.0.0.1:54336
 1719938103071	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofilentXQwH"
 console.warn: services.settings: Ignoring preference override of remote settings server
 console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
@@ -898,3 +899,18 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
 1719938346598	Marionette	INFO	Stopped listening on port 54350
 Dynamically enable window occlusion 1
+1720392372990	geckodriver	INFO	Listening on 127.0.0.1:59601
+1720392376101	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\menez\\AppData\\Local\\Temp\\rust_mozprofileJsPtTH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1720392377107	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1720392377362	Marionette	INFO	Listening on port 59618
+Read port: 59618
+1720392377734	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
+1720392407148	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://uibank.uipath.com."
