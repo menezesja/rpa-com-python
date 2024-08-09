@@ -7,11 +7,12 @@ import shutil
 
 BotMaestroSDK.RAISE_NOT_CONNECTED = False
 
-
+# Função para criar um diretório se ele não existir
 def criar_diretorio_se_nao_existir(diretorio):
     if not os.path.exists(diretorio):
         os.makedirs(diretorio)
 
+# Função para mover arquivos de uma pasta para pastas específicas baseadas em extensão
 def mover_arquivos_para_pasta(origem, destino_documentos, destino_imagens):
     for arquivo in os.listdir(origem):
         caminho_arquivo = os.path.join(origem, arquivo)
@@ -29,7 +30,6 @@ def main():
 
     print(f"Task ID: {execution.task_id}")
     print(f"Task Parameters: {execution.parameters}")
-
 
     # Configurações WebBot
     bot = WebBot()
