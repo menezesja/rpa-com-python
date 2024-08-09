@@ -42,12 +42,12 @@ def main():
     # XPath dos resultados
     xpath_primeiro_resultado = '//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/span/a/div/div'
     xpath_base_demais_resultados = '//*[@id="rso"]/div[2]/div[{}]/div/div/div[1]/div/div/span/a/div/div'
-    max_resultados = 5
+    max_resultados = 3
 
     # Tenta clicar no primeiro resultado
     try:
         bot.driver.find_element(By.XPATH, xpath_primeiro_resultado).click()
-        sleep(3)
+        sleep(5)
     except Exception as e:
         print(f"Erro ao clicar no primeiro resultado: {e}")
 
@@ -55,10 +55,11 @@ def main():
     for i in range(2, max_resultados + 1):
         try:
             bot.driver.find_element(By.XPATH, xpath_base_demais_resultados.format(i)).click()
-            sleep(10)
+            sleep(5)
         except Exception as e:
             print(f"Erro ao clicar no resultado {i}: {e}") 
 
+    sleep(15)
     # Define os diretórios
     pasta_bot = os.path.dirname(os.path.abspath(__file__))
     pasta_documentos = os.path.join(pasta_bot, 'documentos')
@@ -71,7 +72,7 @@ def main():
     # Move os arquivos baixados para as pastas corretas
     arquivos_restantes = mover_arquivos_para_pasta(pasta_bot, pasta_documentos, pasta_imagens)
 
-    bot.wait(10000)
+    bot.wait(1000)
     bot.stop_browser()
 
 if __name__ == '__main__':
