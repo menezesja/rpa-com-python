@@ -1,8 +1,17 @@
 from botcity.web import WebBot, Browser, By
 from botcity.maestro import *
 from webdriver_manager.chrome import ChromeDriverManager
+from dotenv import load_dotenv
+
+import os
+import pandas as pd
+
+load_dotenv()
+EMAIL = os.getenv('EMAIL')
+PASSWORD = os.getenv('PASSWORD')
 
 BotMaestroSDK.RAISE_NOT_CONNECTED = False
+
 
 
 def main():
