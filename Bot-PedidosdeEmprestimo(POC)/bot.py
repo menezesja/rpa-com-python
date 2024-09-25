@@ -1,6 +1,7 @@
 from botcity.web import WebBot, Browser, By
 from botcity.maestro import *
 from selenium.webdriver.support.ui import Select
+from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 
 import pandas as pd
@@ -22,21 +23,29 @@ def main():
     df = pd.read_excel(file_path, engine='openpyxl')
 
     bot = WebBot()
+
     bot.headless = False
-    bot.browser = Browser.FIREFOX
-    bot.driver_path = r"resources\geckodriver.exe"
+
+    bot.browser = Browser.CHROME
+
+    bot.driver_path = ChromeDriverManager().install()
 
     bot.browse("https://uibank.uipath.com/welcome")
-    bot.driver.maximize_window()
-    sleep(3)
+
+    bot.maximize_window()
+
+    bot.wait(3000)
 
     for _ in range(2):  # Rola a página para baixo
         bot.page_down()
         sleep(1)
    
+    totalAprovado = 0
+    totalNaoAprovado = 0
+
     #realiza clique no button "Apply For Loan"
     xpath = "/html/body/app-root/body/div/app-welcome-page/div[2]/div/div[3]/div/button"
-    element = bot.driver.find_element(By.XPATH, xpath)
+    element = bot.find_element(xpath, By.XPATH)
     element.click()
     sleep(2)
     
@@ -100,14 +109,18 @@ def main():
         if mensagem_aprovacao:
             apr = float(bot.find_element("rateValue", By.ID).get_attribute('innerHTML'))  
             idEmprestimo = bot.find_element("loanID", By.ID).get_attribute('innerHTML')
-            
+               
             #extraindo informações do site  como porcentagem de aprovado e o id do emprestimo, preenchendo na planilha
             df.at[index, 'Status do Empréstimo'] = 'Aprovado'
             df.at[index, 'ID do Empréstimo'] = str(idEmprestimo)
             df.at[index, 'APR'] = apr
-                                      
+
+            totalAprovado += 1
+                                     
         else:
             df.at[index, 'Status do Empréstimo'] = 'Não Aprovado'
+
+            totalNaoAprovado += 1
         
         # Salva as alterações de volta na planilha
         df.to_excel(file_path, index=False, engine='openpyxl', na_rep='')
@@ -116,6 +129,12 @@ def main():
         btnSubmitApply = bot.find_element("applyForNewLoanButton", By.ID)
         btnSubmitApply.click()
         sleep(2)
+    
+    # Imprimir no console
+    print("Relatório de Cadastro de Funcionários")
+    print("-------------------------------------")
+    print(f"Total de emprestimos aprovados: {totalAprovado}")
+    print(f"Total de emprestimos não aprovados: {totalNaoAprovado}")
     
     bot.wait(1000)
     bot.stop_browser()
