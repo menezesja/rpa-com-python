@@ -1,9 +1,10 @@
-from botcity.web import WebBot, Browser, By
+from botcity.web import WebBot, Browser
 from botcity.maestro import *
 from datetime import datetime
 
 BotMaestroSDK.RAISE_NOT_CONNECTED = False
 
+from webdriver_manager.chrome import ChromeDriverManager
 
 def main():
     try:
@@ -11,59 +12,38 @@ def main():
         execution = maestro.get_execution()
 
         bot = WebBot()
-        bot.headless = True
+        bot.headless = False
 
-        # Setando Firefox
-        bot.browser = Browser.FIREFOX
+        # Definindo o navegador Chrome
+        bot.browser = Browser.CHROME
+        bot.driver_path = ChromeDriverManager().install()
 
-        bot.driver_path = r"resources\geckodriver.exe"
-
+        # Alerta de início
         maestro.alert(
             task_id=execution.task_id,
-            title="BotYoutube - Inicio",
-            message="Estamos iniciando o processo",
+            title="BotYoutube - Início",
+            message="Iniciando o processo",
             alert_type=AlertType.INFO
         )
     
-        canal = execution.parameters.get("canal", "pythonbrasiloficial")
-        bot.browse(f"https://www.youtube.com/@{canal}")
+        bot.browse("https://www.youtube.com/pythonbrasiloficial")
         bot.driver.maximize_window()
-        
-        # Faz a busca por ID
-        elemento_inscritos = bot.find_element("subscriber-count", By.ID)
 
-        # Coletando o conteúdo de texto do elemento
-        inscritos = elemento_inscritos.text
-
-        # Printando os dados coletados
-        print(f"Inscritos => {inscritos}")
+        # Espera 3 segundos para garantir que a página carregue
+        bot.wait(3000)
 
         status = AutomationTaskFinishStatus.SUCCESS
         message = "Tarefa BotYoutube finalizada com sucesso"
 
-        # Salvando uma captura de tela
-        bot.save_screenshot("captura.png")
-
-        # Enviando para a plataforma com o nome "Captura Canal..."
-        maestro.post_artifact(
-            task_id=execution.task_id,
-            artifact_name=f"Captura Canal {canal}.png",
-            filepath="captura.png"
-        )
-
     except Exception as ex:
         # Salvando captura de tela do erro
         bot.save_screenshot("erro.png")
-        
-        # Dicionario de tags adicionais
-        tags = {"canal": canal}
 
         # Registrando o erro
         maestro.error(
             task_id=execution.task_id,
             exception=ex,
             screenshot="erro.png",
-            tags=tags
         )
 
         status = AutomationTaskFinishStatus.FAILED
@@ -72,16 +52,18 @@ def main():
     finally:
         bot.wait(2000)
         bot.stop_browser()
-        
+
+        canal = "pythonbrasiloficial"
+
         maestro.new_log_entry(
-            activity_label="EstatisticasYoutub",
+            activity_label="botyoutube",
             values = {
                 "data_hora": datetime.now().strftime("%Y-%m-%d_%H-%M"),
-                "canal": canal,
-                "inscritos": inscritos
+                "canal": canal
             }
         )
 
+        # Finalizando a tarefa no Maestro
         maestro.finish_task(
             task_id=execution.task_id,
             status=status,
@@ -90,7 +72,6 @@ def main():
 
 def not_found(label):
     print(f"Element not found: {label}")
-
 
 if __name__ == '__main__':
     main()
