@@ -34,11 +34,22 @@ def main():
 
     bot.driver.maximize_window()
 
+    while len(bot.find_elements('/html/body/div[2]/div/div[2]/div[3]/div[2]/span/span', By.XPATH))<1:
+        bot.wait(1000)
+        print('carrengado.')
+
+    bot.find_element('/html/body/div[2]/div/div[2]/div[3]/div[2]/span/span', By.XPATH).click()
+
+    while len(bot.find_elements('//*[@id="identifierId"]', By.XPATH))<1:
+        bot.wait(1000)
+        print('carrengado.')
     
+    bot.find_element('//*[@id="identifierId"]', By.XPATH).click()
+    bot.paste(EMAIL)
+    bot.enter()
 
 
-
-    bot.wait(3000)
+    bot.wait(3000100000)
 
     bot.stop_browser()
 

@@ -18,6 +18,8 @@ def main():
         bot.browser = Browser.CHROME
         bot.driver_path = ChromeDriverManager().install()
 
+        test = execution.parameters.get("test")
+
         # Alerta de início
         maestro.alert(
             task_id=execution.task_id,
@@ -34,6 +36,8 @@ def main():
 
         status = AutomationTaskFinishStatus.SUCCESS
         message = "Tarefa BotYoutube finalizada com sucesso"
+
+        bot.save_screenshot("resultado.png")
 
     except Exception as ex:
         # Salvando captura de tela do erro
@@ -61,6 +65,12 @@ def main():
                 "data_hora": datetime.now().strftime("%Y-%m-%d_%H-%M"),
                 "canal": canal
             }
+        )
+
+        maestro.post_artifact(
+            task_id=execution.task_id,
+            artifact_name=f"result-{test}.png",
+            filepath="resultado.png"
         )
 
         # Finalizando a tarefa no Maestro
